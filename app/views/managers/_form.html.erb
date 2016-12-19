@@ -1,0 +1,8 @@
+<%= simple_form_for (@manager) do |f| %>
+<%= f.input :manager_name, label: "Manager Name" %>
+<%= f.input :contact_no , label: "Contact: No" %>
+<%= f.input :salary, label: "Salary" %>
+<%= f.input :address, label: "Address" %>
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

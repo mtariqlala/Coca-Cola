@@ -1,0 +1,27 @@
+<div align="left">
+<%= link_to "Add New Delivery",new_delivery_path, class:"btn btn-primary btn-block" %>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Delivery No</th>
+<th>Delivery Date</th>
+<th>Distance Covered in km</th>
+<th>Operations </th>
+</tr>
+</thead>
+<tbody>
+<% @deliveries.each do |delivery| %>
+<tr>
+<th><%=delivery.id%></th>
+<td><%= delivery.delivery_date %></td>
+<td><%= delivery.distance_covered %></td>
+<td><div class:"btn-group">
+<%= link_to"Edit", edit_delivery_path(delivery.id), class:"btn btn-warning"%>
+<%= link_to"Show", delivery_path(delivery.id), class:"btn btn-info"%>
+<%= link_to"delete", delivery_path(delivery.id),method: :delete , data: {confirm: "Are You Sure Want to delete?"} ,class:"btn btn-danger"%>
+</div></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+</div>

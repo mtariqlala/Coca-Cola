@@ -1,0 +1,33 @@
+<div align="left">
+<%= link_to "Add New Manager",new_manager_path, class:"btn btn-primary btn-block" %>
+</div>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Manager ID</th>
+<th>Manager Name</th>
+<th>Contact: No</th>
+<th>Salary</th>
+<th>Address</th>
+<th>Operations </th>
+</tr>
+</thead>
+<tbody>
+<% @managers.each do |manager| %>
+<tr>
+<th><%= manager.id %></th>
+<td><%= manager.manager_name %></td>
+<td><%= manager.contact_no %></td>
+<td><%= manager.salary %></td>
+<td><%= manager.address %></td>
+<td>
+<div class:"btn-group">
+<%= link_to"Edit", edit_manager_path(manager.id), class:"btn btn-warning btn-xs"%>
+<%= link_to"Show", manager_path(manager.id), class:"btn btn-info btn-xs"%>
+<%= link_to"delete", manager_path(manager.id),method: :delete , data: {confirm: "Are You Sure Want to delete?"} ,class:"btn btn-danger btn-xs"%>
+</div>
+</td>
+</tr>
+<% end %>
+</tbody>
+</table>

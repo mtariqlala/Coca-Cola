@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  delivery_id: 
+  lorry_id: 
+
+two:
+  delivery_id: 
+  lorry_id: 

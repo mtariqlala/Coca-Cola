@@ -1,0 +1,29 @@
+<div align="left">
+<%= link_to "Add Record in Drive", new_drife_path, class:"btn btn-primary btn-block" %>
+
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Lorry ID</th>
+<th>Driver ID </th>
+<th>Operations </th>
+</tr>
+</thead>
+<tbody>
+<% @drives.each do |drive| %>
+<tr>
+<th><%=drive.id%></th>
+<td><%= drive.lorry_id %></td>
+<td><%= drive.driver_id %></td>
+<td>
+<div class:"btn-group">
+<%= link_to"Edit", edit_drife_path(drive.id), class:"btn btn-warning btn-xs"%>
+<%= link_to"Show", drife_path(drive.id), class:"btn btn-info btn-xs"%>
+<%= link_to"delete", drife_path(drive.id),method: :delete , data: {confirm: "Are You Sure Want to delete?"} ,class:"btn btn-danger btn-xs"%>
+</div></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+</div>

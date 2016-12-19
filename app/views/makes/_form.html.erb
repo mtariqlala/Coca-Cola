@@ -1,0 +1,7 @@
+<%= simple_form_for (@make) do |f| %>
+<%= f.input :delivery_id,label:"Delivery No" %>
+<%= f.input :lorry_id, label:"Lorry id" %>
+
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

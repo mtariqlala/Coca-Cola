@@ -1,0 +1,7 @@
+<%= simple_form_for (@lorry) do |f| %>
+<%= f.input :Lorry_no, label: "Lorry No" %>
+<%= f.input :made_in , label: "Made In" %>
+<%= f.input :date_of_manufacturer, label: "Manufacturer Date" %>
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

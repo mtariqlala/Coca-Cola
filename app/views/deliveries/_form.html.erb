@@ -1,0 +1,7 @@
+<%= simple_form_for (@delivery) do |f| %>
+<%= f.input :delivery_date,label:"Delivery Date" %>
+<%= f.input :distance_covered, label:"Distance Covered In km" %>
+
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

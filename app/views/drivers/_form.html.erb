@@ -1,0 +1,8 @@
+<%= simple_form_for (@driver) do |f| %>
+<%= f.input :name, label: "Driver Name" %>
+<%= f.input :contact_no , label: "Contact: No" %>
+<%= f.input :salary, label: "Salary" %>
+<%= f.input :address, label: "Address" %>
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

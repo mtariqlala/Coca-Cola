@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  outlet_Name: MyString
+  location: MyString
+  manager_id: 
+
+two:
+  outlet_Name: MyString
+  location: MyString
+  manager_id: 

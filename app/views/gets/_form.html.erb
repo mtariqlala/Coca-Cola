@@ -1,0 +1,7 @@
+<%= simple_form_for (@get) do |f| %>
+<%= f.input :outlet_id,label:"Outlet ID" %>
+<%= f.input :delivery_id, label:"Delivery No" %>
+
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>

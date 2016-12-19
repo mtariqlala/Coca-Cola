@@ -1,0 +1,8 @@
+<%= simple_form_for (@outlet) do |f| %>
+<%= f.input :outlet_Name,label:"Outlet Name" %>
+<%= f.input :location, label:"Location of Outlet" %>
+<%= f.input :manager_id, label:"Manager ID" %>
+
+<br />
+<%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
